@@ -14,8 +14,9 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('', function () {
-    return view('admin_dashboard');
+    return view('role.Main');
 });
+
 
 Route::prefix('insideheader')->group(function () {
     Route::get('/dashboard', function () {

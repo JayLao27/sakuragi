@@ -16,3 +16,25 @@ use Illuminate\Support\Facades\Route;
 Route::get('', function () {
     return view('admin_dashboard');
 });
+
+Route::prefix('insideheader')->group(function () {
+    Route::get('/dashboard', function () {
+        return view('insideheader.dashboard');
+    });
+
+    Route::get('/inventory', function () {
+        return view('insideheader.inventory');
+    });
+
+    Route::get('/orders', function () {
+        return view('insideheader.orders');
+    });
+
+    Route::get('/services', function () {
+        return view('insideheader.services');
+    });
+
+    Route::get('/reports', function () {
+        return view('insideheader.report');
+    });
+});

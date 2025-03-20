@@ -8,6 +8,8 @@
 </head>
 <body class="bg-light">
 
+
+
     <!-- Admin Navbar -->
     <nav class="navbar navbar-expand-lg bg-white border-bottom shadow-sm">
         <div class="container">
@@ -24,11 +26,11 @@
             <!-- Navbar Links -->
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-4">
-                    <li class="nav-item"><a class="nav-link active" href="{{ url('/dashboard') }}">Dashboard</a></li>
-                    <li class="nav-item"><a class="nav-link" href="{{ url('/inventory') }}">Inventory</a></li>
-                    <li class="nav-item"><a class="nav-link" href="{{ url('/orders') }}">Orders</a></li>
-                    <li class="nav-item"><a class="nav-link" href="{{ url('/services') }}">Services</a></li>
-                    <li class="nav-item"><a class="nav-link" href="{{ url('/reports') }}">Reports</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="{{ url('insideheader/dashboard') }}">Dashboard</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{{ url('insideheader/inventory') }}">Inventory</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{{ url('insideheader/orders') }}">Orders</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{{ url('insideheader/services') }}">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{{ url('insideheader/report') }}">Reports</a></li>
                 </ul>
             </div>
         </div>

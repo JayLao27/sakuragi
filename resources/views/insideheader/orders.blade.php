@@ -14,7 +14,7 @@
     <!-- Order Header -->
     <div class="d-flex justify-content-between align-items-center mb-3">
         <h4 class="fw-bold">Order #1001</h4>
-        <span class="badge bg-primary">In Progress</span>
+        <span class="badge bg-primary">In Progress - bluecolor / cancel - redcolor  / success - greencolor</span>
     </div>
 
     <div class="row">

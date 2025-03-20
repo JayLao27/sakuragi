@@ -80,27 +80,27 @@
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    <tr><td>M</td><td>John Smith</td><td>Logo on left chest</td><td>CEO</td><td><button class="btn btn-sm btn-danger">Delete</button></td></tr>
+                                    <tr><td>M</td><td>John Smith</td><td> kuwaon sa database t</td><td>CEO</td><td><button class="btn btn-sm btn-danger">Delete - delete function</button></td></tr>
                                     <tr><td>M</td><td>Jane Doe</td><td>Logo on left chest</td><td>CTO</td><td><button class="btn btn-sm btn-danger">Delete</button></td></tr>
                                     <tr><td>L</td><td>Robert Johnson</td><td>Logo on left chest, Name on right sleeve</td><td>CPO</td><td><button class="btn btn-sm btn-danger">Delete</button></td></tr>
                                     <tr><td>L</td><td>Emily Williams</td><td>Logo on left chest</td><td>COO</td><td><button class="btn btn-sm btn-danger">Delete</button></td></tr>
                                     <tr><td>XL</td><td>Michael Brown</td><td>Logo on left chest, Position on right sleeve</td><td>Director</td><td><button class="btn btn-sm btn-danger">Delete</button></td></tr>
                                 </tbody>
                             </table>
-                            <button class="btn btn-sm btn-outline-primary">+ Add Item</button>
+                            <button class="btn btn-sm btn-outline-primary">+ Add Item modal ni fe?</button>
                         </div>
 
                         <!-- Checklist Content -->
                         <div class="tab-pane fade" id="checklist">
                             <h5 class="fw-bold">Order Checklist <span class="text-muted float-end">25% Complete</span></h5>
                             <div class="progress mb-3">
-                                <div class="progress-bar bg-dark" style="width: 25%;"></div>
+                                <div class="progress-bar bg-dark" style="width: 25%;"> I javascript ni</div>
                             </div>
                             <ul class="list-unstyled">
-                                <li><input type="checkbox" checked disabled> Design file received (PSD, PNG, SVG)</li>
-                                <li><input type="checkbox"> Thread color confirmed</li>
-                                <li><input type="checkbox"> Shirt size & material verified</li>
-                                <li><input type="checkbox"> Embroidery quality checked</li>
+                                <li><input type="checkbox" checked disabled>  kuwaon ni sa database Design file received (PSD, PNG, SVG)</li>
+                                <li><input type="checkbox"> kuwaon ni sa database  </li>
+                                <li><input type="checkbox"> kuwaon ni sa database </li>
+                                <li><input type="checkbox"> kuwaon ni sa database </li>
                             </ul>
                             <p class="text-warning">⚠ 3 tasks remaining</p>
                         </div>
@@ -130,10 +130,10 @@
                     <h5 class="fw-bold">Customer</h5>
                     <p><strong>Sarah Johnson</strong></p>
                     <p class="text-muted">Customer since 2023</p>
-                    <p><strong>Email:</strong> sarah.johnson@example.com</p>
-                    <p><strong>Phone:</strong> (555) 123-4567</p>
-                    <p><strong>Address:</strong><br> 123 Main Street, Suite 101<br> Anytown, CA 12345</p>
-                    <button class="btn btn-outline-dark btn-sm">View Customer History</button>
+                    <p><strong>Email:</strong> sarah.johnson@example.com example sa database </p>
+                    <p><strong>Phone:</strong> (555) 123-4567 example sa database</p>
+                    <p><strong>Address:</strong><br> 123 Main Street, Suite 101<br> Anytown, CA 12345 example sa database</p>
+                    <button class="btn btn-outline-dark btn-sm">View Customer History fetch</button>
                 </div>
             </div>
 

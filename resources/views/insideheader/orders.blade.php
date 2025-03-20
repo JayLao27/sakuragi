@@ -18,7 +18,7 @@
     </div>
 
     <div class="row">
-        <!-- Left Column (Order Details) -->
+        <!-- Left Column (Order Details & Customization Tabs) -->
         <div class="col-md-8">
             <!-- Order Details Card -->
             <div class="card mb-4">
@@ -46,73 +46,85 @@
             </div>
 
             <!-- Customization Tabs -->
-            <ul class="nav nav-tabs">
-                <li class="nav-item"><a class="nav-link active" href="#">Customizations</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Checklist</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Design Files</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Custom Fields</a></li>
+            <ul class="nav nav-tabs" id="customizationTabs">
+                <li class="nav-item">
+                    <a class="nav-link active" data-bs-toggle="tab" href="#customizations">Customizations</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-bs-toggle="tab" href="#checklist">Checklist</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-bs-toggle="tab" href="#design-files">Design Files</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-bs-toggle="tab" href="#custom-fields">Custom Fields</a>
+                </li>
             </ul>
 
-            <!-- Customization Details Table -->
+            <!-- Card for Customization Details -->
             <div class="card mt-3">
                 <div class="card-body">
-                    <h5 class="fw-bold">Customization Details</h5>
-                    <table class="table table-striped">
-                        <thead>
-                            <tr>
-                                <th>Size</th>
-                                <th>Name</th>
-                                <th>Position</th>
-                                <th>Additional Details</th>
-                                <th>Actions</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>M</td>
-                                <td>John Smith</td>
-                                <td>Logo on left chest</td>
-                                <td>CEO</td>
-                                <td><button class="btn btn-sm btn-danger">Delete</button></td>
-                            </tr>
-                            <tr>
-                                <td>M</td>
-                                <td>Jane Doe</td>
-                                <td>Logo on left chest</td>
-                                <td>CTO</td>
-                                <td><button class="btn btn-sm btn-danger">Delete</button></td>
-                            </tr>
-                            <tr>
-                                <td>L</td>
-                                <td>Robert Johnson</td>
-                                <td>Logo on left chest, Name on right sleeve</td>
-                                <td>CPO</td>
-                                <td><button class="btn btn-sm btn-danger">Delete</button></td>
-                            </tr>
-                            <tr>
-                                <td>L</td>
-                                <td>Emily Williams</td>
-                                <td>Logo on left chest</td>
-                                <td>COO</td>
-                                <td><button class="btn btn-sm btn-danger">Delete</button></td>
-                            </tr>
-                            <tr>
-                                <td>XL</td>
-                                <td>Michael Brown</td>
-                                <td>Logo on left chest, Position on right sleeve</td>
-                                <td>Director</td>
-                                <td><button class="btn btn-sm btn-danger">Delete</button></td>
-                            </tr>
-                        </tbody>
-                    </table>
-                    <button class="btn btn-sm btn-outline-primary">+ Add Item</button>
+                    <!-- Tab Content -->
+                    <div class="tab-content">
+                        <!-- Customizations Content -->
+                        <div class="tab-pane fade show active" id="customizations">
+                            <h5 class="fw-bold">Customization Details</h5>
+                            <table class="table table-striped">
+                                <thead>
+                                    <tr>
+                                        <th>Size</th>
+                                        <th>Name</th>
+                                        <th>Position</th>
+                                        <th>Additional Details</th>
+                                        <th>Actions</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr><td>M</td><td>John Smith</td><td>Logo on left chest</td><td>CEO</td><td><button class="btn btn-sm btn-danger">Delete</button></td></tr>
+                                    <tr><td>M</td><td>Jane Doe</td><td>Logo on left chest</td><td>CTO</td><td><button class="btn btn-sm btn-danger">Delete</button></td></tr>
+                                    <tr><td>L</td><td>Robert Johnson</td><td>Logo on left chest, Name on right sleeve</td><td>CPO</td><td><button class="btn btn-sm btn-danger">Delete</button></td></tr>
+                                    <tr><td>L</td><td>Emily Williams</td><td>Logo on left chest</td><td>COO</td><td><button class="btn btn-sm btn-danger">Delete</button></td></tr>
+                                    <tr><td>XL</td><td>Michael Brown</td><td>Logo on left chest, Position on right sleeve</td><td>Director</td><td><button class="btn btn-sm btn-danger">Delete</button></td></tr>
+                                </tbody>
+                            </table>
+                            <button class="btn btn-sm btn-outline-primary">+ Add Item</button>
+                        </div>
+
+                        <!-- Checklist Content -->
+                        <div class="tab-pane fade" id="checklist">
+                            <h5 class="fw-bold">Order Checklist <span class="text-muted float-end">25% Complete</span></h5>
+                            <div class="progress mb-3">
+                                <div class="progress-bar bg-dark" style="width: 25%;"></div>
+                            </div>
+                            <ul class="list-unstyled">
+                                <li><input type="checkbox" checked disabled> Design file received (PSD, PNG, SVG)</li>
+                                <li><input type="checkbox"> Thread color confirmed</li>
+                                <li><input type="checkbox"> Shirt size & material verified</li>
+                                <li><input type="checkbox"> Embroidery quality checked</li>
+                            </ul>
+                            <p class="text-warning">⚠ 3 tasks remaining</p>
+                        </div>
+
+                        <!-- Design Files Content -->
+                        <div class="tab-pane fade" id="design-files">
+                            <h5 class="fw-bold">Design Files</h5>
+                            <p>Uploaded design files will appear here.</p>
+                        </div>
+
+                        <!-- Custom Fields Content -->
+                        <div class="tab-pane fade" id="custom-fields">
+                            <h5 class="fw-bold">Custom Fields</h5>
+                            <p>Additional custom fields related to the order.</p>
+                        </div>
+
+                    </div>
                 </div>
             </div>
         </div>
 
         <!-- Right Column (Customer & Order Timeline) -->
         <div class="col-md-4">
-            <!-- Customer Card -->
+            <!-- Customer Card (Now in Right Column) -->
             <div class="card mb-4">
                 <div class="card-body">
                     <h5 class="fw-bold">Customer</h5>
@@ -136,26 +148,9 @@
                     </ul>
                 </div>
             </div>
-
-            <!-- Customization Summary -->
-            <div class="card">
-                <div class="card-body">
-                    <h5 class="fw-bold">Customization Summary</h5>
-                    <p><strong>Total Items:</strong> 5</p>
-                    <p><strong>Verified Items:</strong> 5 of 5</p>
-                    <h6>Size Breakdown</h6>
-                    <ul class="list-unstyled">
-                        <li>M - 2</li>
-                        <li>L - 2</li>
-                        <li>XL - 1</li>
-                    </ul>
-                </div>
-            </div>
         </div>
     </div>
 </div>
-
-
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
